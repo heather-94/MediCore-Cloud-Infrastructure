@@ -1,0 +1,24 @@
+A6 Synthetic Monitoring Dataset Notes
+
+Purpose:
+This dataset was generated for A6 Data Visualisation because limited real CloudWatch data was available after AWS resources were stopped to avoid unnecessary costs, and no simulated Canvas dataset was available.
+
+Dataset type:
+Synthetic CloudWatch-style monitoring data for the MediCore deployment.
+
+Period:
+30 days of hourly data from 2026-07-15 to 2026-08-14.
+
+Included metrics:
+- CPUUtilization for MediCore-Web-VM-01
+- NetworkIn for MediCore-Web-VM-01
+- NetworkOut for MediCore-Web-VM-01
+- FailedSSHAttempts for MediCore-Web-VM-01
+- CPUUtilization for medicore-db
+
+Recommended A6 visualisations:
+1. Web VM CPU utilisation over time.
+2. Failed SSH attempts per day or alert frequency by alarm type.
+
+Important disclosure:
+This dataset is synthetic and should be clearly labelled as simulated data in the report and /analysis folder. It should not be presented as actual CloudWatch export data.
